@@ -51,14 +51,16 @@ function getCpuRandomNumber(){
     let result;
 
     if(number % 2){
-        result = false;
+        result = 'dispari';
     }else{
-        result = true;
+        result = 'pari';
     }
-
 
     return result;
  }
 
- const finalResult = isEven(sum); 
- console.log(finalResult);
+if (isEven(sum) === evenOdd){
+    console.log("L'utente ha vinto!")
+}else{
+    console.log('La CPU ha vinto :(')
+}
