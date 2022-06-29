@@ -18,14 +18,14 @@
 //Dichiariamo chi ha vinto.
 
 const evenOdd = prompt('Pari o Dispari?','Pari');
-console.log(evenOdd);
+console.log(`La scelta dell'utente é : ${evenOdd}`);
 
 const min = 1;
 const max = 5;
 
 //CHIEDIAMO IL NUMERO ALL'UTENTE
 const userNumber = parseInt(prompt(`Scegli un numero compreso tra ${min} e ${max}`));
-console.log(userNumber);
+console.log(`Il numero dell'utente é : ${userNumber}`);
 
 
 //FUNZIONE PER GENERARE UN NUMERO RANDOM ALLA CPU
@@ -37,12 +37,12 @@ function getCpuRandomNumber(){
 }
 
  const cpuNumber = getCpuRandomNumber();
- console.log(cpuNumber);
+ console.log(`Il numero della CPU é : ${cpuNumber}`);
 
 
  //SOMMA DEI DUE NUMERI
  const sum = userNumber + cpuNumber;
- console.log(sum);
+ console.log(`La somma é: ${sum}`);
 
 
  //FUNZIONE PER STABILIRE SE  LA SOMMA DEI DUE RISULTATI SIA PARI O DISPARI
@@ -60,7 +60,7 @@ function getCpuRandomNumber(){
  }
 
 if (isEven(sum) === evenOdd){
-    console.log("L'utente ha vinto!")
-}else{
     console.log('La CPU ha vinto :(')
+}else{
+    console.log("L'utente ha vinto!")
 }
