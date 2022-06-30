@@ -24,7 +24,7 @@ console.log(`La parola al contrario é: ${reversedWord}`);
 
 if(userWord === reversedWord){
 
-    console.log('La due parole sono palindrome');
+    console.log(`La parola ${userWord} é palindroma`);
 }else{
-    console.log('Le due parole non sono palindrome');
+    console.log(`La parola ${userWord} non é palindroma`);
 }
